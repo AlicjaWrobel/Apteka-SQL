@@ -1,0 +1,8 @@
+CREATE VIEW REJESTR_SPRZEDAZY_A1 AS
+SELECT p.id_produkt, SUM(l.ilosc) AS ILOSC, SUM(l.ilosc*p.cena_sprzedazy) AS ZYSK_SPRZEDAZY, SUM(l.ilosc*p.cena_sprzedazy*l.odplatnosc/100) AS ZWROT_NFZ 
+FROM produkt p
+JOIN lista_zakupow l ON l.id_produkt = p.id_produkt
+JOIN zakup z ON l.id_zakup = z.id_zakup
+WHERE z.id_apteka = 1
+GROUP BY p.id_produkt
+ORDER BY p.id_produkt ASC;

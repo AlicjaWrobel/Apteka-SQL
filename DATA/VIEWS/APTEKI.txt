@@ -1,0 +1,6 @@
+CREATE VIEW APTEKI AS
+SELECT a.id_apteka, TO_CHAR(d.otwarcie, 'YYYY-MON-DD HH24:MI') AS OTWARCIE, TO_CHAR(d.zamkniecie, 'YYYY-MON-DD HH24:MI') AS ZAMKNIECIE
+FROM apteka a
+JOIN godziny_otwarcia g ON g.id_apteka = a.id_apteka
+JOIN dostepnosc d ON d.id_otwarcie = g.id_otwarcie
+ORDER BY d.otwarcie, a.id_apteka;

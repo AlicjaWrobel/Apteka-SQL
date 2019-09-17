@@ -1,0 +1,7 @@
+CREATE VIEW PRACOWNICY AS
+SELECT g.id_pracownik, p.stanowisko, TO_CHAR(g.rozpoczecie, 'YYYY-MON-DD HH24:MI') AS ROZPOCZECIE, 
+TO_CHAR(g.zakonczenie, 'YYYY-MON-DD HH24:MI') AS ZAKONCZENIE
+FROM grafik g
+JOIN pracownik p ON g.id_pracownik = p.id_pracownik
+WHERE g.id_apteka = 1
+ORDER BY g.rozpoczecie;

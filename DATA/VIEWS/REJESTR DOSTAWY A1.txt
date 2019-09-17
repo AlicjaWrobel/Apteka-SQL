@@ -1,0 +1,8 @@
+CREATE VIEW REJESTR_DOSTAWY_A1 AS 
+SELECT p.id_produkt, SUM(d.ilosc) AS ILOSC, SUM(d.ilosc*d.cena_kupna) AS Koszt
+FROM produkt p
+JOIN dostawa d ON p.id_produkt = d.id_produkt 
+JOIN zamowienie z ON z.id_produkt = p.id_produkt
+WHERE z.id_apteka = 1
+GROUP BY p.id_produkt
+ORDER BY p.id_produkt;

@@ -1,0 +1,3 @@
+CREATE VIEW AKTUALNY_STAN_A1 AS
+SELECT vt.id_produkt, vt.nazwa, vt.ilosc - vr.ilosc AS ILOSC FROM REJESTR_DOSTAWY_A1 vt
+JOIN REJESTR_SPRZEDAZY_A1 vr ON vr.id_produkt = vt.id_produkt;

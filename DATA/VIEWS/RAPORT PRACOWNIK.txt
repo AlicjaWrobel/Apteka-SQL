@@ -1,0 +1,8 @@
+CREATE VIEW RAPORT_PRACOWNIK AS
+SELECT l.id_produkt, SUM(l.ilosc) AS ILOSC, p.cena_sprzedazy*l.ilosc AS CENA FROM zakup z
+JOIN pracownik pr ON pr.id_pracownik = z.id_pracownik
+JOIN lista_zakupow l ON l.id_zakup = z.id_zakup
+JOIN  produkt p ON p.id_produkt = l.id_produkt
+WHERE pr.id_pracownik = 1
+GROUP BY l.id_produkt, p.cena_sprzedazy*l.ilosc
+ORDER BY l.id_produkt ASC;

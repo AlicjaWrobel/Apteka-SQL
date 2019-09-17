@@ -1,0 +1,15 @@
+INSERT INTO ZAKUP (id_zakup,id_klient,id_apteka,id_pracownik,data,cena) VALUES (1,14,'1','1', '2019-01-01 15:10:00', '21,47');
+INSERT INTO ZAKUP (id_zakup,id_klient,id_apteka,id_pracownik,data,cena) VALUES (2,2,'1','2', '2019-01-01 17:00:00', '21,47');
+INSERT INTO ZAKUP (id_zakup,id_klient,id_apteka,id_pracownik,data,cena) VALUES (3,1,'1','3', '2019-01-01 19:00:00', '21,47');
+INSERT INTO ZAKUP (id_zakup,id_klient,id_apteka,id_pracownik,data,cena) VALUES (4,24,'1','4', '2019-01-02 1:00:00', '21,47');
+INSERT INTO ZAKUP (id_zakup,id_klient,id_apteka,id_pracownik,data,cena) VALUES (5,5,'1','1', '2019-01-01 9:45:00', '90,42');
+INSERT INTO ZAKUP (id_zakup,id_klient,id_apteka,id_pracownik,data,cena) VALUES (6,28,'1','2', '2019-01-01 15:00:00','90,42');
+INSERT INTO ZAKUP (id_zakup,id_klient,id_apteka,id_pracownik,data,cena) VALUES (7,20,'1','3', '2019-01-01 17:00:00','90,42');
+INSERT INTO ZAKUP (id_zakup,id_klient,id_apteka,id_pracownik,data,cena) VALUES (8,17,'1','4', '2019-01-02 5:00:00','90,42');
+INSERT INTO ZAKUP (id_zakup,id_klient,id_apteka,id_pracownik,data,cena) VALUES (9,20,'1','1', '2019-01-01 11:00:00','40,84');
+INSERT INTO ZAKUP (id_zakup,id_klient,id_apteka,id_pracownik,data,cena) VALUES (10,26,'1','2', '2019-01-01 21:00:00','40,84');
+INSERT INTO ZAKUP (id_zakup,id_klient,id_apteka,id_pracownik,data,cena) VALUES (11,1,'1','3', '2019-01-01 19:20:00','40,84');
+INSERT INTO ZAKUP (id_zakup,id_klient,id_apteka,id_pracownik,data,cena) VALUES (12,26,'1','4', '2019-01-02 5:20:00','40,84');
+INSERT INTO ZAKUP (id_zakup,id_klient,id_apteka,id_pracownik,data,cena) VALUES (13,28,'1','1', '2019-01-01 12:12:00','40,84');
+INSERT INTO ZAKUP (id_zakup,id_klient,id_apteka,id_pracownik,data,cena) VALUES (14,7,'1','2', '2019-01-01 20:00:00', '40,84');
+INSERT INTO ZAKUP (id_zakup,id_klient,id_apteka,id_pracownik,data,cena) VALUES (15,1,'1','3', '2019-01-01 18:10:00', '40,84');
